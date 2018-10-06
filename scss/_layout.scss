@@ -1,0 +1,33 @@
+.main {
+    background-color: rgba(255, 255, 255, .9);
+    max-width: 1000px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    border-radius: 15px;
+}
+
+.title {
+    padding: 1rem 0;
+}
+
+.description {
+    margin: 2rem auto;
+
+}
+
+.row {
+    border: 1px solid yellowgreen;
+    display: flex;
+}
+.labels {
+    border: 1px solid orangered;
+    width: 50%;
+    text-align: right;
+    padding: 1rem .5rem;
+}
+.right-tabs {
+    padding: 1rem .5rem;
+
+}
