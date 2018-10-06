@@ -59,7 +59,10 @@ typings/
 
 # next.js build output
 .next
+<<<<<<< HEAD
 
 
 package.json
 package-lock.json
+=======
+>>>>>>> 61bdd00d349078b8141ff7d96e9f048343f0d76a
