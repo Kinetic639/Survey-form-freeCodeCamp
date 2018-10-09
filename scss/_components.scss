@@ -1,9 +1,22 @@
-
 .submit {
     width: 100px;
     margin: 1rem auto;
 }
-label {
 
-    border: 1px solid orangered;
+.radio-selection {
+    list-style: none;
+    text-align: left;
+    & li {
+        margin: 1rem 0;
+    }
 }
+
+.radio-label {
+    vertical-align: middle;
+    margin: 1.4rem auto;
+}
+
+
+input[type="radio"]{
+    vertical-align: middle;
+  }
