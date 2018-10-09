@@ -1,0 +1,49 @@
+.form {
+    &__radio-label {
+        cursor: pointer;
+        position: relative;
+        padding-left: 3.5rem;
+    }
+
+    &__radio-button {
+        height: 3rem;
+        width: 3rem;
+        border: 4px solid green;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -.5rem;
+
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: scale(0) translate(-50%, -50%);
+            background-color: green;
+            transition: opacity .3s;
+        }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        animation: createBox .25s;
+        transition: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes createBox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+}

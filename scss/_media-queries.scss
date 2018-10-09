@@ -21,7 +21,7 @@
     }
 
     .labels {
-        width: 60%;
+        //width: 60%;
         //background-color: yellowgreen;
     }
 }
@@ -61,5 +61,11 @@
 
     .list {
         margin-left: .2rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .input-field {
+        width: 100%;
     }
 }
