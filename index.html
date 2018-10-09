@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>freeCodeCamp - survey form</title>
 </head>
@@ -14,104 +15,106 @@
 <body>
   <div id="main" class="main">
 
+<div class="section-title">
     <h1 id="title" class="title">Survey Form</h1>
 
     <p id="description" class="description">Survey for freeCodeCamp</p>
+</div>
 
     <form action="#" class="survey-form" id="survey-form">
 
-      <div class="row">
-        <div class="labels">
-          <label for="name" class="label" id="name-label">Name:</label>
+      <div class="section">
+        <div class="row">
+          <div class="labels">
+            <label for="name" class="label" id="name-label">Name:</label>
+          </div>
+          <div class="right-tabs">
+            <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
         </div>
-        <div class="right-tabs">
-          <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+
+        <div class="row">
+          <div class="labels">
+            <label for="email" class="label" id="email-label">Email:</label>
+          </div>
+          <div class="right-tabs">
+            <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="labels">
+            <label for="age" class="label" id="number-label">Age:</label>
+          </div>
+          <div class="right-tabs">
+            <input type="number" name="age" id="number" min="1" max="130" class="input-field" placeholder="Age">
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="labels">
+            <label for="dropdown" id="dropdown-label" class="label">What you do for living?</label>
+          </div>
+          <div class="right-tabs">
+            <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row section">
         <div class="labels">
-          <label for="email" class="label" id="email-label">Email:</label>
-        </div>
-        <div class="right-tabs">
-          <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="labels">
-          <label for="age" class="label" id="number-label">Age:</label>
-        </div>
-        <div class="right-tabs">
-          <input type="number" name="age" id="number" min="1" max="130" class="input-field" placeholder="Age">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="labels">
-          <label for="dropdown" id="dropdown-label" class="label">What you do for living?</label>
-        </div>
-        <div class="right-tabs">
-          <select id="dropdown" name="currentPos" class="dropdown">
-            <option disabled value>Select an option</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="labels">
-          <label for="radio-buttons" class="label">How likely is that you would recommend <br> freeCodeCamp to a
+          <label for="radio-buttons" class="label">How likely is that you would recommend freeCodeCamp to a
             friend?</label>
         </div>
-        <div class="right-tabs">
+        <div class="right-tabs no-pad-top">
           <ul class="radio-selection list">
-            <li><label for="radio" class="radio-label"><input type="radio" name="radio" value="Definitely" class="radio-input">
-                Definitely</label></li>
-            <li><label for="radio" class="radio-label"><input type="radio" name="radio" value="Maybe" class="radio-input">
-                Maybe</label></li>
-            <li><label for="radio" class="radio-label"><input type="radio" name="radio" value="Not sure" class="radio-input">
-                Not sure</label></li>
+            <li><input type="radio" name="radio" value="Definitely" class="radio-input"><label for="radio" class="radio-label"></label>Definitely</label></li>
+            <li><input type="radio" name="radio" value="Maybe" class="radio-input"><label for="radio" class="radio-label"></label>Maybe</label></li>
+            <li><input type="radio" name="radio" value="Not sure" class="radio-input"><label for="radio" class="radio-label"></label>Not
+              sure</label></li>
           </ul>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row section">
         <div class="labels">
           <label for="checkbox-options-list" class="label">Things that should be improved in the future (Check all that
             apply):</label>
         </div>
-        <div class="right-tabs">
+        <div class="right-tabs no-pad-top">
           <ul class="checkbox-options-list list">
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="1">Front-end
+            <li><input type="checkbox" class="checkbox-input" value="1"><label for="#" class="checkbox-label">Front-end
                 Projects</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="2">Back-end
+            <li><input type="checkbox" class="checkbox-input" value="2"><label for="#" class="checkbox-label">Back-end
                 Projects</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="3">Data
+            <li><input type="checkbox" class="checkbox-input" value="3"><label for="#" class="checkbox-label">Data
                 Visualization</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="4">Challenges</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="5">Open
+            <li><input type="checkbox" class="checkbox-input" value="4"><label for="#" class="checkbox-label">Challenges</label></li>
+            <li><input type="checkbox" class="checkbox-input" value="5"><label for="#" class="checkbox-label">Open
                 Source Community</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="6">Gitter
+            <li><input type="checkbox" class="checkbox-input" value="6"><label for="#" class="checkbox-label">Gitter
                 help rooms</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="7">Videos</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="8">City
+            <li><input type="checkbox" class="checkbox-input" value="7"><label for="#" class="checkbox-label">Videos</label></li>
+            <li><input type="checkbox" class="checkbox-input" value="8"><label for="#" class="checkbox-label">City
                 Meetups</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="9">Wiki</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="10">Forum</label></li>
-            <li><label for="#" class="checkbox-label"><input type="checkbox" class="checkbox-input" value="11">Additional
+            <li><input type="checkbox" class="checkbox-input" value="9"><label for="#" class="checkbox-label">Wiki</label></li>
+            <li><input type="checkbox" class="checkbox-input" value="10"><label for="#" class="checkbox-label">Forum</label></li>
+            <li><input type="checkbox" class="checkbox-input" value="11"><label for="#" class="checkbox-label">Additional
                 Courses</label></li>
           </ul>
         </div>
       </div>
 
 
-      <div class="row">
-        <div class="labels">
+      <div class="comment-row section">
+        <div class="labels comment-labels">
           <label for="comments" class="label">Any Comments or Suggestions?</label>
         </div>
         <div class="right-tabs comment-input">

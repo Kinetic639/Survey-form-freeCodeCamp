@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  //border: 1px solid grey;
 }
 
 *,
@@ -22,5 +23,7 @@ body {
   background-image: url('../../img/abs.png');
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
