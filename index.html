@@ -17,7 +17,6 @@
 
 <div class="section-title">
     <h1 id="title" class="title">Survey Form</h1>
-
     <p id="description" class="description">Survey for freeCodeCamp</p>
 </div>
 
@@ -53,130 +52,101 @@
 
         <div class="row ">
           <div class="labels">
-            <label for="dropdown" id="dropdown-label" class="label">What you do for living?</label>
+            <label for="dropdown" id="dropdown-label" class="label">Which option best describes your current role?</label>
           </div>
           <div class="right-tabs">
-            <select id="dropdown" name="currentPos" class="dropdown" >
-              <option disabled value>Select an option</option>
-              <option value="student">Student</option>
-              <option value="job">Full Time Job</option>
-              <option value="learner">Full Time Learner</option>
-              <option value="preferNo">Prefer not to say</option>
-              <option value="other">Other</option>
+            <select id="dropdown" name="current-position" class="dropdown" >
+              <option  selected="selected" disabled="disabled" value="0">Select an option</option>
+              <option value="1">Student</option>
+              <option value="2">Full Time Job</option>
+              <option value="3">Full Time Learner</option>
+              <option value="4">Prefer not to say</option>
+              <option value="5">Other</option>
             </select>
           </div>
         </div>
       </div>
 
       <div class="row section">
-        <div class="labels">
+        <div class="labels labels-top">
           <label for="radio-buttons" class="label">How likely is that you would recommend freeCodeCamp to a
             friend?</label>
         </div>
         <div class="right-tabs new">
             <div class="inputGroup">
-                <input id="radio1" name="radio" type="radio"/>
+                <input id="radio1" name="radio" type="radio" value="1">
                 <label for="radio1">Definitely</label>
               </div>
               <div class="inputGroup">
-                <input id="radio2" name="radio" type="radio"/>
+                <input id="radio2" name="radio" type="radio" value="2">
                 <label for="radio2">Maybe</label>
               </div>
               <div class="inputGroup">
-                <input id="radio3" name="radio" type="radio"/>
+                <input id="radio3" name="radio" type="radio" value="3">
                 <label for="radio3">Not sure</label>
               </div>
         </div>
       </div>
 
-
       <div class="row section">
-        <div class="labels">
-          <label for="checkbox-options-list" class="label">Things that should be improved in the future (Check all that
-            apply):</label>
-        </div>
-        <div class="right-tabs no-pad-top">
-          <ul class="checkbox-options-list list">
-            <li><input type="checkbox" class="checkbox-input" value="1"><label for="#" class="checkbox-label">Front-end
-                Projects</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="2"><label for="#" class="checkbox-label">Back-end
-                Projects</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="3"><label for="#" class="checkbox-label">Data
-                Visualization</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="4"><label for="#" class="checkbox-label">Challenges</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="5"><label for="#" class="checkbox-label">Open
-                Source Community</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="6"><label for="#" class="checkbox-label">Gitter
-                help rooms</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="7"><label for="#" class="checkbox-label">Videos</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="8"><label for="#" class="checkbox-label">City
-                Meetups</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="9"><label for="#" class="checkbox-label">Wiki</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="10"><label for="#" class="checkbox-label">Forum</label></li>
-            <li><input type="checkbox" class="checkbox-input" value="11"><label for="#" class="checkbox-label">Additional
-                Courses</label></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row section">
-        <div class="labels">
+        <div class="labels labels-top">
           <label for="checkbox-options-list" class="label">Things that should be improved in the future (Check all that
             apply):</label>
         </div>
         <div class="right-tabs new">
           <div class="inputGroup">
-            <input id="option1" name="option1" type="checkbox"/>
-            <label for="option1">Option One</label>
+            <input id="option1" name="option1" type="checkbox" value="1">
+            <label for="option1">Front-end Projects</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option2" name="option2" type="checkbox"/>
-            <label for="option2">Option Two</label>
+            <input id="option2" name="option2" type="checkbox" value="2">
+            <label for="option2">Back-end Projects</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option3" name="option3" type="checkbox"/>
-            <label for="option3">Option 3</label>
+            <input id="option3" name="option3" type="checkbox" value="3">
+            <label for="option3">Data Visualization</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option4" name="option4" type="checkbox"/>
-            <label for="option4">Option 4</label>
+            <input id="option4" name="option4" type="checkbox" value="4">
+            <label for="option4">Challenges</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option5" name="option5" type="checkbox"/>
-            <label for="option5">Option 5</label>
+            <input id="option5" name="option5" type="checkbox" value="5">
+            <label for="option5">Open Source Community</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option6" name="option6" type="checkbox"/>
-            <label for="option6">Option 6</label>
+            <input id="option6" name="option6" type="checkbox" value="6">
+            <label for="option6">Gitter help rooms</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option7" name="option7" type="checkbox"/>
-            <label for="option7">Option 7</label>
+            <input id="option7" name="option7" type="checkbox" value="7">
+            <label for="option7">Videos</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option8" name="option8" type="checkbox"/>
-            <label for="option8">Option 8</label>
+            <input id="option8" name="option8" type="checkbox" value="8">
+            <label for="option8">City Meetups</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option9" name="option9" type="checkbox"/>
-            <label for="option9">Option 9</label>
+            <input id="option9" name="option9" type="checkbox" value="9">
+            <label for="option9">Wiki</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option10" name="option10" type="checkbox"/>
-            <label for="option10">Option 10</label>
+            <input id="option10" name="option10" type="checkbox" value="10">
+            <label for="option10">Forum</label>
           </div>
 
           <div class="inputGroup">
-            <input id="option11" name="option11" type="checkbox"/>
-            <label for="option11">Option 11</label>
+            <input id="option11" name="option11" type="checkbox" value="11">
+            <label for="option11">Additional Courses</label>
           </div>
 
         </div>
@@ -198,19 +168,6 @@
 
     </form>
 
-
-    <div style="max-width: 600px; margin: 24px auto;">
-
-        <p>The trick to this is placing the label after the checkbox. That way you can use the <code>:checked</code> state to toggle the different pseudo elements on the label. No javascript necessary.</p>
-      <p>To make the background animation work, you'll need a tiny bit of magic. The <code>label:before</code> element is a small 10x10 circle. We animate the scale of it instead of the size so that we can keep the proportion of the circle and make it look like it "fills out" the bar.</p>
-      <p>The max width of the form is set to 550px. The <code>:before</code> element animates by using scale3d (for hardware acceleration) by 56 times. 56 * 10 === 560. This allows the circle to fill out the bar by going slightly outside the bounds of the input group container.</p>
-
-      <p>Caveat: as you shrink the form, if you don't adjust the scale value, the animation will look faster and less clean. As you design for smaller devices, add a few break points to adjust the scale amount to your liking.</p>
-    </div>
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
 
 
