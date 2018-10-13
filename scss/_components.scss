@@ -1,12 +1,8 @@
-.submit {
-    width: 100px;
-    margin: 1rem auto;
-}
-
 .comment-input {
     width: 50%;
     text-align: left;
     padding-left: 1rem;
+
     &-field {
         border-radius: 5px;
         padding: .3rem .5rem;
@@ -14,30 +10,36 @@
         height: 100px;
         width: 100%;
         max-width: 100%;
-    }
-}
 
+        &:focus {
+            outline: none;
+            outline: 1px solid $color-primary;
 
-.input-field {
-    border: 2px solid transparent;
-    border-radius: 4px;
-    background-color: rgb(236, 236, 236);
-    padding: .5rem 1rem;
-
-    &:focus {
-        outline: none;
-        box-shadow: 0 1rem 2rem rgba($color-black, $alpha: .1);
-        border: 2px solid $color-valid-dark;
-        background-color: $color-valid-light;
-        transition: all .2s ease-in-out;
-
-        &:invalid {
-        border: 2px solid $color-invalid-dark;
-        background-color: $color-invalid-light;
-        transition: all .2s ease-in-out;
         }
     }
-    &::placeholder {
-        color: $color-grey-dark-1;
-    }
 }
+
+
+.btn-submit {
+    margin: 3rem auto;
+    width: 20rem;
+    height: 4rem;
+    background-color: $color-primary;
+    border: none;
+    border-radius: 7px;
+}
+
+
+.dropdown {
+    padding: 1rem 1rem;
+    width: 160px;
+    border: 1px solid $color-grey-light-1;
+    border-radius: 5px;
+    background-color: #ececec;
+}
+
+.number {
+    width: 80px;
+}
+
+

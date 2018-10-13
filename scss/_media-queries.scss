@@ -11,36 +11,21 @@
     .comment-input {
         width: 100%;
     }
-
-    .comment-labels {
-        width: 40%;
-    }
-
-    .comment-row {
-        padding: .5rem;
-    }
-
-    .labels {
-        //width: 60%;
-        //background-color: yellowgreen;
-    }
 }
 
-@media (max-width: 480px) {
-
-    .section-title {
-        padding: .5rem;
-        margin: 2rem .5rem 0;
-    }
+@media (max-width: 550px) {
 
     .section {
-        padding: .5rem;
-        margin: 2rem .5rem;
+        padding: 1rem ;
+        //margin: 2rem .5rem;
     }
 
     .row {
         flex-direction: column;
         justify-content: center;
+    }
+    .right-tabs {
+        width: 100%;
     }
 
     .labels {
@@ -48,6 +33,10 @@
         //background-color: yellowgreen;
         text-align: left;
         padding: .5rem;
+    }
+
+    .comment-labels {
+        padding: .5rem 1rem;
     }
 
     .comment-row {
@@ -61,11 +50,5 @@
 
     .list {
         margin-left: .2rem;
-    }
-}
-
-@media (max-width: 250px) {
-    .input-field {
-        width: 100%;
     }
 }

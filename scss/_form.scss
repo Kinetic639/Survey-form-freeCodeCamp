@@ -1,7 +1,39 @@
-.new {
-    width: 50%;
-}
+.form {
 
+  &__input {
+      border: none;
+      border-bottom: 3px solid $color-grey-dark-1;
+      border-radius: 3px;
+      background-color: $color-grey-light-3;
+      padding: .5rem 1rem;
+
+      &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba($color-black, $alpha: .1);
+          border-bottom: 3px solid $color-valid-dark;
+          background-color: $color-valid-light;
+          transition: all .2s ease-in-out;
+
+          &:invalid {
+          border-bottom: 3px solid $color-invalid-dark;
+          background-color: $color-invalid-light;
+          transition: all .2s ease-in-out;
+          }
+      }
+      &::placeholder {
+          color: $color-grey-dark-1;
+      }
+  }
+
+  &__label {
+    text-align: left;
+    padding: .5rem 1rem;
+    display: block;
+    transition: all .3s;
+  }
+
+
+}
 .inputGroup {
     background-color: #cccccc;
     display: block;
@@ -10,11 +42,11 @@
     border-radius: 5px;
 
     label {
-      padding: 12px 30px;
+      padding: 1.2rem 1rem 1.2rem 5.5rem;
       width: 100%;
       display: block;
       text-align: center;
-      color: #3C454C;
+      color: $color-grey-dark-2;
       cursor: pointer;
       position: relative;
       z-index: 2;

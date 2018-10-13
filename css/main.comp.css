@@ -13,16 +13,12 @@ html {
   box-sizing: border-box;
   /*what 1 rem is*/
   font-size: 62.5%;
-  text-align: center;
-  color: #3C454C; }
+  text-align: center; }
 
 body {
   background-color: #3e47b1;
   font-size: 1.6rem;
   line-height: 2.4rem; }
-
-*:focus {
-  outline-color: #3e47b1; }
 
 .main {
   background-color: #fff;
@@ -56,8 +52,7 @@ body {
   justify-content: center;
   width: 50%;
   text-align: right;
-  padding: .3rem .5rem;
-  margin: .5rem 0; }
+  padding: 1.3rem .5rem; }
 
 .labels-top,
 .comment-labels {
@@ -84,48 +79,35 @@ body {
       outline: none;
       outline: 1px solid #3e47b1; }
 
-.btn-submit {
-  margin: 3rem auto;
-  width: 20rem;
-  height: 4rem;
-  background-color: #3e47b1;
-  border: none;
-  border-radius: 7px; }
-
-.dropdown {
-  padding: 1rem 1rem;
-  width: 160px;
-  border: 1px solid #d3d3d3;
-  border-radius: 5px;
-  background-color: #ececec; }
-
-.number {
-  width: 80px; }
-
-.form__input {
-  border: none;
-  border-bottom: 3px solid #858585;
-  border-radius: 3px;
-  background-color: #f7f7f7;
+.input-field {
+  border-bottom: 2px solid transparent;
+  border-radius: 4px;
+  background-color: #ececec;
   padding: .5rem 1rem; }
-  .form__input:focus {
+  .input-field:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #1cb81c;
+    border-bottom: 2px solid #1cb81c;
     background-color: #f7ffee;
     transition: all .2s ease-in-out; }
-    .form__input:focus:invalid {
-      border-bottom: 3px solid #f12d2d;
+    .input-field:focus:invalid {
+      border-bottom: 2px solid #f12d2d;
       background-color: #fff4f4;
       transition: all .2s ease-in-out; }
-  .form__input::placeholder {
+  .input-field::placeholder {
     color: #858585; }
 
-.form__label {
-  text-align: left;
-  padding: .5rem 1rem;
-  display: block;
-  transition: all .3s; }
+.btn-submit {
+  width: 12rem;
+  height: 4rem;
+  background-color: #3e47b1; }
+
+.dropdown {
+  padding: 22.5rem 1rem;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  background-color: #ececec; }
 
 .inputGroup {
   background-color: #cccccc;
@@ -204,14 +186,9 @@ body {
 .description {
   font-size: 2rem; }
 
-.form__input {
-  font-family: inherit;
+.input-field {
   font-size: 1.6rem;
   line-height: 2.2rem; }
-
-.form__label {
-  font-family: inherit;
-  font-size: 1.6rem; }
 
 .comment-input-field {
   font-family: inherit;
@@ -219,37 +196,4 @@ body {
 
 .dropdown {
   font-size: 1.6rem;
-  color: #5e5e5e; }
-
-@media (max-width: 800px) {
-  .main {
-    margin: 0;
-    width: 100%;
-    max-width: 850px;
-    border-radius: 0; } }
-
-@media (max-width: 630px) {
-  .comment-input {
-    width: 100%; } }
-
-@media (max-width: 550px) {
-  .section {
-    padding: 1rem; }
-  .row {
-    flex-direction: column;
-    justify-content: center; }
-  .right-tabs {
-    width: 100%; }
-  .labels {
-    width: 100%;
-    text-align: left;
-    padding: .5rem; }
-  .comment-labels {
-    padding: .5rem 1rem; }
-  .comment-row {
-    flex-direction: column; }
-  .right-tabs {
-    text-align: left;
-    padding-top: 0; }
-  .list {
-    margin-left: .2rem; } }
+  padding: .2rem; }

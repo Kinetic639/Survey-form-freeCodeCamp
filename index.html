@@ -16,11 +16,11 @@
   <div id="main" class="main">
 
 <div class="section-title">
-    <h1 id="title" class="title">Survey Form</h1>
+    <h1 id="title">Survey Form</h1>
     <p id="description" class="description">Survey for freeCodeCamp</p>
 </div>
 
-    <form action="#" class="survey-form" id="survey-form">
+    <form action="#" class="form" id="survey-form">
 
       <div class="section">
         <div class="row">
@@ -28,7 +28,7 @@
             <label for="name" class="label" id="name-label">Name:</label>
           </div>
           <div class="right-tabs">
-            <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name..." required>
+            <input type="text" name="name"  id="name" class="form__input" placeholder="Enter your name..." required>
           </div>
         </div>
 
@@ -37,7 +37,7 @@
             <label for="email" class="label" id="email-label">Email:</label>
           </div>
           <div class="right-tabs">
-            <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email..." required>
+            <input type="email" name="email" id="email" class="form__input" placeholder="Enter your email..." required>
           </div>
         </div>
 
@@ -46,7 +46,7 @@
             <label for="age" class="label" id="number-label">Age:</label>
           </div>
           <div class="right-tabs">
-            <input type="number" name="age" id="number" min="1" max="130" class="input-field" placeholder="Age">
+            <input type="number" name="age" id="number" min="1" max="130" class="form__input number" placeholder="Age" required>
           </div>
         </div>
 
@@ -72,7 +72,7 @@
           <label for="radio-buttons" class="label">How likely is that you would recommend freeCodeCamp to a
             friend?</label>
         </div>
-        <div class="right-tabs new">
+        <div class="right-tabs">
             <div class="inputGroup">
                 <input id="radio1" name="radio" type="radio" value="1">
                 <label for="radio1">Definitely</label>
@@ -93,7 +93,7 @@
           <label for="checkbox-options-list" class="label">Things that should be improved in the future (Check all that
             apply):</label>
         </div>
-        <div class="right-tabs new">
+        <div class="right-tabs">
           <div class="inputGroup">
             <input id="option1" name="option1" type="checkbox" value="1">
             <label for="option1">Front-end Projects</label>
@@ -164,7 +164,7 @@
 
 
 
-      <button class="btn submit" id="submit">Submit</button>
+      <button class="btn btn-submit" id="submit">Submit</button>
 
     </form>
 
@@ -175,6 +175,7 @@
 
   </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -8,9 +8,15 @@
 }
 
 
-.input-field {
+.form__input{
+    font-family: inherit;
     font-size: 1.6rem;
     line-height: 2.2rem;
+}
+
+.form__label {
+    font-family: inherit;
+    font-size: 1.6rem;
 }
 
 .comment-input-field {
@@ -20,5 +26,9 @@
 
 .dropdown {
     font-size: 1.6rem;
-    padding: .2rem;
+    color: #5e5e5e;
+}
+
+.btn-submit {
+
 }
