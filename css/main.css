@@ -17,12 +17,12 @@ html {
   color: #3C454C; }
 
 body {
-  background-color: #3e47b1;
+  background-color: #0e2a85;
   font-size: 1.6rem;
   line-height: 2.4rem; }
 
 *:focus {
-  outline-color: #3e47b1; }
+  outline-color: #0e2a85; }
 
 .main {
   background-color: #fff;
@@ -37,6 +37,7 @@ body {
   border: 2px solid #d3d3d3;
   margin: 2rem 2rem 0;
   border-radius: 5px;
+  background-color: #0e2a85;
   padding: .5rem;
   line-height: 3rem; }
 
@@ -82,13 +83,13 @@ body {
     max-width: 100%; }
     .comment-input-field:focus {
       outline: none;
-      outline: 1px solid #3e47b1; }
+      outline: 1px solid #0e2a85; }
 
 .btn-submit {
   margin: 3rem auto;
   width: 20rem;
   height: 4rem;
-  background-color: #3e47b1;
+  background-color: #0e2a85;
   border: none;
   border-radius: 7px; }
 
@@ -151,7 +152,7 @@ body {
       height: 10px;
       border-radius: 50%;
       content: '';
-      background-color: #5562eb;
+      background-color: #0e2a85;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -198,8 +199,13 @@ body {
     cursor: pointer;
     visibility: hidden; }
 
-.title {
-  font-size: 4rem; }
+.section-title {
+  line-height: 6rem;
+  color: #fff; }
+  .section-title h1 {
+    font-size: 5rem; }
+  .section-title p {
+    font-size: 3rem; }
 
 .description {
   font-size: 2rem; }
@@ -220,6 +226,14 @@ body {
 .dropdown {
   font-size: 1.6rem;
   color: #5e5e5e; }
+
+.btn-submit {
+  font-size: 2.2rem;
+  color: #fff; }
+  .btn-submit:hover {
+    cursor: pointer;
+    border: 1px solid #54E0C7;
+    color: #54E0C7; }
 
 @media (max-width: 800px) {
   .main {
@@ -253,3 +267,17 @@ body {
     padding-top: 0; }
   .list {
     margin-left: .2rem; } }
+
+@media (max-width: 550px) {
+  .section-title h1 {
+    font-size: 4rem; }
+  .section-title p {
+    font-size: 2.5rem; } }
+
+@media (max-width: 380px) {
+  .section-title {
+    line-height: 4.5rem; }
+    .section-title h1 {
+      font-size: 3rem; }
+    .section-title p {
+      font-size: 2rem; } }

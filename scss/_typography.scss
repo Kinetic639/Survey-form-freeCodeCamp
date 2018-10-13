@@ -1,6 +1,12 @@
-
-.title {
-    font-size: 4rem;
+.section-title {
+    line-height: 6rem;
+    color: $color-white;
+    & h1 {
+        font-size: 5rem;
+    }
+    & p {
+        font-size: 3rem;
+    }
 }
 
 .description {
@@ -30,5 +36,12 @@
 }
 
 .btn-submit {
+    font-size: 2.2rem;
+    color: $color-white;
 
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $color-confirm;
+        color: $color-confirm;
+    }
 }
