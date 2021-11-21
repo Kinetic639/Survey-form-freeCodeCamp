@@ -1,6 +1,6 @@
 ![main view](https://github.com/Kinetic639/Survey-form-freeCodeCamp/blob/master/img/miniatures/main.png?raw=true)
 
-# Projekt Lista zadań Youcode
+# Projekt Ankiety wykonany pod freeCodeCamp
 
 Live Demo
 [https://kinetic639.github.io/Survey-form-freeCodeCamp/](https://kinetic639.github.io/Survey-form-freeCodeCamp/)
@@ -13,7 +13,9 @@ Projekt stworzony w ramach freeCodeCamp - na początkach mojej nauki front-endu
 
 &nbsp;
 
-#### W projekcie starałem się zaprezentować praktyczną znajomość poniższych zagadnień związanych z:
+
+
+### W projekcie starałem się zaprezentować praktyczną znajomość poniższych zagadnień związanych z:
 
 ##### HTML :
 
@@ -49,3 +51,12 @@ Projekt stworzony w ramach freeCodeCamp - na początkach mojej nauki front-endu
 
 - Walidacja wpisywanego adresu e-mail za pomocą pseudo klasy :invalid.
   ![validation gif](https://github.com/Kinetic639/Survey-form-freeCodeCamp/blob/master/img/miniatures/validation.gif?raw=true)
+&nbsp;
+
+---
+
+&nbsp;
+
+### Projekt zdobył maksymalną ilość punktów  podczas testów :)
+
+![test results](https://github.com/Kinetic639/Survey-form-freeCodeCamp/blob/master/img/miniatures/test_result.png?raw=true)
